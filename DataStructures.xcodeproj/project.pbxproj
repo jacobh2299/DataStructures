@@ -90,6 +90,8 @@
 		5BDD44BB20220C870095BFD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD44C220220D330095BFD0 /* Controller.hpp */,
+				5BDD44C120220D330095BFD0 /* Controller.cpp */,
 				5BDD44BD20220C940095BFD0 /* Tools */,
 			);
 			path = Controller;
@@ -105,8 +107,6 @@
 		5BDD44BD20220C940095BFD0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				5BDD44C120220D330095BFD0 /* Controller.cpp */,
-				5BDD44C220220D330095BFD0 /* Controller.hpp */,
 				5BDD44C520220F350095BFD0 /* Timer.cpp */,
 				5BDD44C620220F350095BFD0 /* Timer.hpp */,
 			);
