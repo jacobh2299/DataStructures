@@ -11,11 +11,12 @@
 
 #include <stdio.h>
 #include <assert.h>
-#include <iosteam>
+#include <iostream> //tracing and debugging
 
 using namespace std;
 
 template <class Type>
+
 class Array
 {
 private:
@@ -25,7 +26,7 @@ public:
     //Constructor
     Array<Type>(int size);
     //Copy Constructor
-    Array<Type>(const Array<Type> & toCopy)
+    Array<Type>(const Array<Type> & toCopy);
     //Destructor
     ~Array<Type>();
     
@@ -38,7 +39,8 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
+
 template <class Type>
 Array<Type> :: Array(int size)
 {
@@ -47,28 +49,32 @@ Array<Type> :: Array(int size)
     
     internalArray = new Type[size];
 }
+
 template <class Type>
 Array<Type> :: Array(const Array<Type> & toCopy)
 {
-    this-> = toCopy.getSize();
+    this->size = toCopy.getSize();
     
-    //build Data Structure
+    //Build Data Stucture
     internalArray = new Type[size];
     
-    for(int index = 0; index < size; index++)
+    for (int index = 0; index < size; index++)
     {
         internalArray[index] = toCopy[index];
     }
 }
+
 template <class Type>
 Array<Type> :: ~Array()
 {
+    cout << "Deleting structure" << endl;
     delete [] internalArray;
 }
-template<class Type>
+
+template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
 {
-    if(&toAssign != this)
+    if (&toAssign != this)
     {
         if(size != toAssign.getSize())
         {
@@ -81,44 +87,46 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
         {
             internalArray[index] = toAssign[index];
         }
-
+    }
     return *this;
 }
+
 template <class Type>
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
 }
+
 template <class Type>
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
 }
+
 template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
 }
+
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
-
+    
     Type value = internalArray[index];
-        
+    
     return value;
 }
+
 template <class Type>
 void Array<Type> :: setAtIndex(int pos, Type item)
 {
-    assert(pos >= && pos <size);
+    assert(pos >=0 && pos < size);
     internalArray[pos] = item;
 }
-    
-    
-    
-    
-    
+
 #endif /* Array_hpp */
+

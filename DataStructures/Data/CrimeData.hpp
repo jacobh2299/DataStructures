@@ -66,6 +66,7 @@ public:
     int getAllRape() const;
     int getAllRobbery() const;
     int getYear() const;
+    CrimeData();
     
     
     

@@ -72,7 +72,10 @@ ostream & operator << (ostream &outputStream, const CrimeData & outputData)
 /**
  Getters
  */
-
+CrimeData :: CrimeData()
+{
+    
+}
 string CrimeData :: getDepartment() const
 {
     return department;
