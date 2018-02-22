@@ -29,7 +29,7 @@ public:
     Type getFromIndex(int index)
     Type remove(int index);
     
-}
+};
 
 template <class Type>
 Stack<Type> :: Stack() : LinkedList<Type>()
