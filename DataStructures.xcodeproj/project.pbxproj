@@ -41,6 +41,9 @@
 		5B7BD90B20221FA8001D5BDA /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		5B7BD90C20221FAE001D5BDA /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		5B7BD90D20221FED001D5BDA /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		5B7F78CA203F1649003C48FE /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		5B7F78CD203F165C003C48FE /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		5B7F78D0203F1673003C48FE /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		5BDD44AF20220C680095BFD0 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD44BE20220CCD0095BFD0 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		5BDD44C120220D330095BFD0 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -63,9 +66,7 @@
 		5B6FF1762024BFF300079216 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				5B70A71F203C72B40060F813 /* List.hpp */,
-				5B70A722203C75AF0060F813 /* LinkedList.hpp */,
-				5B6FF17B2024C0E100079216 /* Array.hpp */,
+				5B7F78C8203F15FC003C48FE /* Linear */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -78,6 +79,20 @@
 				5B70A72B203C76360060F813 /* BiLinearNode.hpp */,
 			);
 			path = Nodes;
+			sourceTree = "<group>";
+		};
+		5B7F78C8203F15FC003C48FE /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				5B6FF17B2024C0E100079216 /* Array.hpp */,
+				5B70A722203C75AF0060F813 /* LinkedList.hpp */,
+				5B70A71F203C72B40060F813 /* List.hpp */,
+				5B7F78CA203F1649003C48FE /* Stack.hpp */,
+				5B7F78CD203F165C003C48FE /* Queue.hpp */,
+				5B7F78D0203F1673003C48FE /* CircularList.hpp */,
+			);
+			name = Linear;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		5BDD44A620220C680095BFD0 = {
