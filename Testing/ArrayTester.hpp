@@ -10,7 +10,7 @@
 #define ArrayTester_hpp
 
 #include <iostream>
-#include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Model/Structures/New Group/Array.hpp"
+#include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Model/Structures/Linear/Array.hpp"
 #include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Controller/FileController.hpp"
 #include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Controller/Tools/Timer.hpp"
 

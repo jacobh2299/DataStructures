@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B5A1503204457CA00425E84 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		5B6FF17B2024C0E100079216 /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		5B70A71F203C72B40060F813 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		5B70A722203C75AF0060F813 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				5B70A725203C75D00060F813 /* Node.hpp */,
 				5B70A728203C76050060F813 /* LinearNode.hpp */,
 				5B70A72B203C76360060F813 /* BiLinearNode.hpp */,
+				5B5A1503204457CA00425E84 /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -91,8 +93,7 @@
 				5B7F78CD203F165C003C48FE /* Queue.hpp */,
 				5B7F78D0203F1673003C48FE /* CircularList.hpp */,
 			);
-			name = Linear;
-			path = "New Group";
+			path = Linear;
 			sourceTree = "<group>";
 		};
 		5BDD44A620220C680095BFD0 = {
