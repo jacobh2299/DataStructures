@@ -65,9 +65,82 @@ void TestingStacksAndQueues:: stackVersusList()
 }
 void TestingStacksAndQueues:: stackVersusQueue()
 {
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file")
+    
+    Stack<CrimeData> crimeStack;
+    Queue<CrimeData> crimeQueue;
+    
+    for(int i = 0; i < 100; i++)
+    {
+        CrimeData temp = data.at(i);
+        crimeStack.push(temp);
+        crimeQueue.enqueue(temp);
+    }
+    
+    Queue<int> queue;
+    Stack<int> stack;
+    Queue<int> queueFromStack;
+    Stack<int> stackFromQueue;
+    
+    for( int i = 0; i < 10; i++)
+    {
+        queue.enqueue(i);
+        stack.push(i);
+    }
+    
+    for(int i = 0; i < 10; i++)
+    {
+        cout << i << endl;
+        cout << "Queue result: " << queue.dequeue() << endl;
+        cout << "Stack result: " << stack.pop() << endl;
+    }
+    
+    for(int i = 0; i < 10; i++)
+    {
+        queue.enqueue(i);
+        stack.push(i);
+    }
+    
+    for(int i = 0; i < 10; i++)
+    {
+        stackFromQueue.push(queue.dequeue());
+        queueFromStack.enqueue(stack.pop());
+    }
+    
+    for(int i = 0; i < 10; i++)
+    {
+        cout << i << endl;
+        cout << "Stack result: " << stackFromQueue.pop() << endl;
+        cout << "Queue result: " << queueFromStack.dequeue() << endl;
+        
+    }
     
 }
 void TestingStacksAndQueues:: queueVersusList()
 {
+    Queue<string> wordQueue;
+    LinkedList<string> wordList;
+    
+    wordQueue.add("first");
+    wordQueue.add("second");
+    wordQueue.add("third");
+    wordQueue.add("fourth");
+    wordQueue.add("fifth");
+    
+    wordList.add("first");
+    wordList.add("second");
+    wordList.add("third");
+    wordList.add("fourth");
+    wordList.add("fifth");
+
+    cout << "Queue: " << wordQueue.getFromIndex(0) << " versus List: " << wordList.getFromIndex(0) << endl;
+    cout << "Here is the in order removal in a queue:" << endl;
+    wordQueue.clear();
+    cout << "here is a backwards order removal in a list:" << endl;
+    for(int i = wordList.getSize() - 1; i >= 0; i--)
+    {
+        cout << wordList.remove(i) << endl;
+    }
+    
     
 }

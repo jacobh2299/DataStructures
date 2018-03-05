@@ -15,6 +15,8 @@ void Controller :: start()
     cout << "Testing the Timer class" << endl;
     Timer codeTimer;
     codeTimer.startTimer();
+    RecursionTester test;
+    test.testRecursionNumbers();
 //    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Data/crime.csv");
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
