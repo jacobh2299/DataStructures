@@ -8,6 +8,7 @@
 
 #include "TestingStacksAndQueues.hpp"
 
+
 void TestingStacksAndQueues:: stackVersusList()
 {
     Stack<int> numberStack;
@@ -66,6 +67,7 @@ void TestingStacksAndQueues:: stackVersusList()
 void TestingStacksAndQueues:: stackVersusQueue()
 {
     vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file")
+    {
     
     Stack<CrimeData> crimeStack;
     Queue<CrimeData> crimeQueue;
@@ -113,6 +115,7 @@ void TestingStacksAndQueues:: stackVersusQueue()
         cout << "Stack result: " << stackFromQueue.pop() << endl;
         cout << "Queue result: " << queueFromStack.dequeue() << endl;
         
+    }
     }
     
 }

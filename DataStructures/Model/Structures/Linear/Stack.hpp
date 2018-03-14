@@ -26,7 +26,7 @@ public:
     //Overridden LinkedList methods
     void add(Type data);
     void addAtIndex(int index, Type data);
-    Type getFromIndex(int index)
+    Type getFromIndex(int index);
     Type remove(int index);
     
 };
@@ -101,7 +101,7 @@ Type Stack<Type> :: peek()
 template <class Type>
 Type Stack<Type> :: getFromIndex(int index)
 {
-    assert(index == 0;)
+    assert(index == 0);
     return peek();
 }
 #endif /* Stack_hpp */

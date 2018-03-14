@@ -104,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				5BDD44B120220C680095BFD0 /* DataStructures */,
-				5BDD44C420220DC10095BFD0 /* Testing */,
 				5BDD44B020220C680095BFD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 		5BDD44B120220C680095BFD0 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD44C420220DC10095BFD0 /* Testing */,
 				5BDD44BE20220CCD0095BFD0 /* Runner.cpp */,
 				5BDD44B920220C7B0095BFD0 /* Diagrams */,
 				5BDD44BA20220C820095BFD0 /* Data */,

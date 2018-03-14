@@ -51,7 +51,7 @@ Queue<Type> :: ~Queue()
 template <class Type>
 void Queue<Type> :: enqueue(Type item)
 {
-    LinearNode<type> * added = new LinearNode<Type>(item);
+    LinearNode<Type> * added = new LinearNode<Type>(item);
     
     if(this->size == 0)
     {

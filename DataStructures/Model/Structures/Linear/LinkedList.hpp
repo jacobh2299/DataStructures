@@ -26,8 +26,8 @@ public:
     virtual ~LinkedList();
     //Helper Methods
     int getSize() const;
-    LinearNode<Type> * getFront;
-    LinearNode<Type> * getEnd;
+    LinearNode<Type> * getFront();
+    LinearNode<Type> * getEnd();
     
     //Structure Methods
     void add(Type item);
@@ -56,23 +56,24 @@ public:
         }
     }
     
+//    template <class Type>
+//    int LinkedList<Type> :: getSize() const
+//    {
+//        return this->size;
+//    }
+//
+//    template <class Type>
+//    LinearNode<Type> * LinkedList<Type> :: getFront()
+//    {
+//        return this->front;
+//    }
+
     template <class Type>
-    int LinkedList<Type> :: getSize() const
-    {
-        return this->size;
-    }
-    
-    template <class> Type
-    LinearNode<Type> * LinkedList<Type> :: getFront()
-    {
-        return this->front;
-    }
-    
     void LinkedList<Type> :: add(Type item)
     {
-        LinearNode<Type> :: newData = new LinearNode<Type>(item);
+        LinearNode<Type> * newData = new LinearNode<Type>(item);
         
-        if(this->size = 0)
+        if(this->size == 0)
         {
             this->front = newData;
         }
@@ -85,7 +86,7 @@ public:
         
         this->size += 1;
     }
-    
+     template <class Type>
     void LinkedList<Type> :: addAtIndex(int index, Type item)
     {
         assert(index >= 0 && index <= this->size);
@@ -116,7 +117,8 @@ public:
             this->size++;
         }
     }
-    Type LinkedList<Type> :: getFromIndex(index)
+ template <class Type>
+    Type LinkedList<Type> :: getFromIndex(int index)
     {
         assert(index >=0 && index < this->size);
         Type data;
@@ -132,6 +134,7 @@ public:
         
         return data;
     }
+ template <class Type>
     Type LinkedList<Type> :: remove(int index)
     {
         assert(index >= 0 && index < this->size);
@@ -169,21 +172,24 @@ public:
             }
             this->size -=1;
             
-            removedData = toBeRemoved->getData();
+            RemovedData = toBeRemoved->getData();
             delete toBeRemoved;
-            return removedData;
+            return RemovedData;
             
         }
     }
+ template <class Type>
     LinearNode<Type> * LinkedList<Type> :: getEnd()
     {
         return this->end;
     }
+template <class Type>
     LinearNode<Type> * LinkedList<Type> :: getFront()
     {
         return this->front;
     }
-    int LinkedLit<Type> :: getSize() const
+template <class Type>
+    int LinkedList<Type> :: getSize() const
     {
         return this->size;
     }

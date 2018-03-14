@@ -10,9 +10,10 @@
 #define List_hpp
 #include <stdio.h>
 #include <assert.h>
-#include "../../Node/LinearNode.hpp"
+#include "LinearNode.hpp"
 
-template class List<Type>
+template <class Type>
+class List
 {
 protected:
     int size;
