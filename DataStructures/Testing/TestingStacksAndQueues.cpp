@@ -66,9 +66,9 @@ void TestingStacksAndQueues:: stackVersusList()
 }
 void TestingStacksAndQueues:: stackVersusQueue()
 {
-    vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file")
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Data/crime.csv")
     {
-    
+    e3z
     Stack<CrimeData> crimeStack;
     Queue<CrimeData> crimeQueue;
     
@@ -108,7 +108,7 @@ void TestingStacksAndQueues:: stackVersusQueue()
         stackFromQueue.push(queue.dequeue());
         queueFromStack.enqueue(stack.pop());
     }
-    
+    67
     for(int i = 0; i < 10; i++)
     {
         cout << i << endl;

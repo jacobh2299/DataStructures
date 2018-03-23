@@ -16,10 +16,12 @@ void Controller :: start()
     Timer codeTimer;
     codeTimer.startTimer();
     RecursionTester test;
-    test.testRecursionNumbers();
+//    test.testRecursionNumbers();
 //    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Data/crime.csv");
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
+//    SortingTester my;
+//    my.testSorts();
     
     
     

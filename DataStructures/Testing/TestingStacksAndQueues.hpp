@@ -23,5 +23,5 @@ public:
     void stackVersusList();
     void stackVersusQueue();
     void queueVersusList();
-};
+ };
 #endif /* TestingStacksAndQueues_hpp */
