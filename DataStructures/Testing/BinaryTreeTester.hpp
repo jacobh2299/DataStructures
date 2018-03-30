@@ -10,11 +10,15 @@
 #define BinaryTreeTester_hpp
 
 #include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Testing/BinaryTreeTester.hpp"
+#include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Model/NonLinearNodes/BinarySearchTree.hpp"
 #include <iostream>
 
 class BinaryTreeTester
 {
+private:
+    BinarySearchTree<int> testTree;
+    
 public:
-    void testNodes();
+    void doTreeStuff();
 };
 #endif /* BinaryTreeTester_hpp */

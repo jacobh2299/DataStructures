@@ -99,7 +99,7 @@ public:
             LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
             if(index == 0)
             {
-                toBeAdded->setextNode(front);
+                toBeAdded->setNextNode(front);
                 front = toBeAdded;
             }
             else
@@ -174,10 +174,12 @@ public:
             
             RemovedData = toBeRemoved->getData();
             delete toBeRemoved;
-            return RemovedData;
+            
             
         }
+        return RemovedData;
     }
+
  template <class Type>
     LinearNode<Type> * LinkedList<Type> :: getEnd()
     {

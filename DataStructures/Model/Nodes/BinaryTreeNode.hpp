@@ -41,6 +41,14 @@ BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 }
 
 template <class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data):Node<Type>(data)
+{
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
+}
+
+template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
 {
     return this->root;

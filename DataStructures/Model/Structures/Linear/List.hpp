@@ -20,7 +20,7 @@ protected:
 public:
     //Structure
     virtual void add(Type item) = 0;
-    virtual void assAtIndex(int index, Type item) = 0;
+    virtual void addAtIndex(int index, Type item) = 0;
     virtual Type remove(int index) = 0;
     
     //Helper

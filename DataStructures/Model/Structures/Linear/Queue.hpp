@@ -79,7 +79,7 @@ void Queue<Type> :: add(Type item)
 template <class Type>
 Type Queue<Type> :: dequeue()
 {
-    asert(this->size>0);
+    assert(this->size>0);
     
     Type returned = this->front->getData();
     
