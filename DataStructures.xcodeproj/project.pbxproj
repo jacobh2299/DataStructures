@@ -42,7 +42,9 @@
 		5B395C97206A943A00D603A3 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		5B48C86620470F6A00B8081A /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
 		5B48C86720470F6A00B8081A /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
+		5B4C6B31208E21C700F38BB3 /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		5B5A1503204457CA00425E84 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		5B6D34DC20863B4F0050B2CE /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		5B6FF17B2024C0E100079216 /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		5B70A71F203C72B40060F813 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		5B70A722203C75AF0060F813 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5B142BDD20654EAB00B01BB4 /* Graph.hpp */,
 				5B828E18206D2A220099F001 /* Tree.hpp */,
 				5B828E1B206D2A600099F001 /* BinarySearchTree.hpp */,
+				5B6D34DC20863B4F0050B2CE /* AVLTree.hpp */,
 			);
 			path = NonLinearNodes;
 			sourceTree = "<group>";
@@ -104,6 +107,7 @@
 				5B70A728203C76050060F813 /* LinearNode.hpp */,
 				5B5A1503204457CA00425E84 /* DoubleNode.hpp */,
 				5B395C97206A943A00D603A3 /* BinaryTreeNode.hpp */,
+				5B4C6B31208E21C700F38BB3 /* N_AryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
