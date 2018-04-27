@@ -9,7 +9,9 @@
 #ifndef BinaryTreeNode_hpp
 #define BinaryTreeNode_hpp
 
-#include "/Users/jhar3975/Documents/Swift/DataStructures/DataStructures/Model/Nodes/Node.hpp"
+#include <iostream>
+#include "Node.hpp"
+using namespace std;
 
 template <class Type>
 class BinaryTreeNode : public Node<Type>
@@ -18,18 +20,18 @@ private:
     BinaryTreeNode<Type> * root;
     BinaryTreeNode<Type> * left;
     BinaryTreeNode<Type> * right;
+    
 public:
     BinaryTreeNode();
     BinaryTreeNode(Type data);
     
     void setRootNode(BinaryTreeNode<Type> * root);
-    void setRightNode(BinaryTreeNode<Type> * right);
     void setLeftNode(BinaryTreeNode<Type> * left);
-
+    void setRightNode(BinaryTreeNode<Type> * right);
+    
     BinaryTreeNode<Type> * getRootNode();
     BinaryTreeNode<Type> * getLeftNode();
     BinaryTreeNode<Type> * getRightNode();
-
 };
 
 template <class Type>
@@ -41,7 +43,7 @@ BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data):Node<Type>(data)
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
     root = nullptr;
     left = nullptr;
@@ -67,9 +69,9 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * root)
 {
-    root = newRoot;
+    this->root = root;
 }
 
 template <class Type>
@@ -83,6 +85,5 @@ void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
 {
     this->left = left;
 }
-
 
 #endif /* BinaryTreeNode_hpp */

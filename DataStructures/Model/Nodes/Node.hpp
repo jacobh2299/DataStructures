@@ -9,80 +9,44 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-#include <stdio.h>
-#include "Node.hpp"
+
 template <class Type>
-class BinaryTreeNode : public Node<Type>
+class Node
 {
 private:
-    BinaryTreeNode<Type> * root;
-    BinaryTreeNode<Type> * left;
-    BinaryTreeNode<Type> * right;
     
+protected:
+    Type data;
 public:
-    BinaryTreeNode();
-    BinaryTreeNode(Type data);
-    
-    void setRootNode(BinaryTreeNode<Type> * root);
-    void setRightNode(BinaryTreeNode<Type> * right);
-    void setLeftNode(BinaryTreeNode<Type> * left);
-    
-    BinaryTreeNode<Type> * getRootNode();
-    BinaryTreeNode<Type> * getLeftNode();
-    BinaryTreeNode<Type> * getRightNode();
-    
+    Node();
+    Node(Type data);
+    void setData(Type data);
+    Type getData();
 };
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
+Node<Type> :: Node()
 {
-    root = nullptr;
-    left = nullptr;
-    right = nullptr;
+    
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
+Node<Type> :: Node(Type data)
 {
-    root = nullptr;
-    left = nullptr;
-    right = nullptr;
+    this -> data = data;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
+void Node<Type> ::setData(Type data)
 {
-    return this->root;
+    this -> data = data;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
+Type Node<Type> :: getData()
 {
-    return this->right;
+    return data;
 }
 
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
-{
-    return this->left;
-}
-
-template <class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
-{
-    root = newRoot;
-}
-
-template <class Type>
-void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
-{
-    this->right = right;
-}
-
-template <class Type>
-void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
-{
-    this->left = left;
-}
 
 #endif /* Node_hpp */
