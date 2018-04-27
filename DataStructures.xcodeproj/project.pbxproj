@@ -62,6 +62,8 @@
 		5B7F78D0203F1673003C48FE /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		5B828E18206D2A220099F001 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		5B828E1B206D2A600099F001 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
+		5BC9EA6C209378D700724DB7 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashTable.hpp; sourceTree = "<group>"; };
+		5BC9EA6F20937E5000724DB7 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 		5BDD44AF20220C680095BFD0 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD44BE20220CCD0095BFD0 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		5BDD44C120220D330095BFD0 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				5B828E18206D2A220099F001 /* Tree.hpp */,
 				5B828E1B206D2A600099F001 /* BinarySearchTree.hpp */,
 				5B6D34DC20863B4F0050B2CE /* AVLTree.hpp */,
+				5BC9EA6C209378D700724DB7 /* HashTable.hpp */,
 			);
 			path = NonLinearNodes;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 				5B5A1503204457CA00425E84 /* DoubleNode.hpp */,
 				5B395C97206A943A00D603A3 /* BinaryTreeNode.hpp */,
 				5B4C6B31208E21C700F38BB3 /* N_AryTreeNode.hpp */,
+				5BC9EA6F20937E5000724DB7 /* HashNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
