@@ -103,7 +103,8 @@ void Hashtable<Type> :: insert(Type value)
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
-    return -1;
+    long insertPosition = insert -> getKey() % this->capacity;
+    return insertPosition;
 }
 
 template <class Type>
