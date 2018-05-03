@@ -93,11 +93,63 @@ bool HashTable<Type> :: isPrime(long current)
 template <class Type>
 void Hashtable<Type> :: resize()
 {
+    long updateCapacity = nextPrime();
+    HashNoce<Type> * * tempStorage = new HashNoce<Type> * [updatedCapacity];
+    
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
+    
+    long oldCapacity = this->capacity;
+    this->capacity = updatedCapacity;
+    
+    for(long index = 0; index < oldCapacity; index++)
+    {
+        
+        if(hashTableStorage[index] != nullptr)
+        {
+            HashNode<Type> * temp = internalStorage[index];
+            
+            long position = findPosition(temp);
+            if(tempStorage[position] == nullptr)
+            {
+                tempStorage[position] = temp;
+            }
+            else
+            {
+                long updatedPosition = handleCollision(temp, position);
+                if(updatedPosition != -1)
+                {
+                    tempStorage[updatedPosition] = temp;
+                }
+            }
+        }
+    }
+    internalStorage = tempStorage;
 }
 
 template <class Type>
 void Hashtable<Type> :: insert(Type value)
 {
+    this->size++;
+    if(((this-> * 1.000) / this->capacity) > this->loadFactor)
+    {
+        resize();
+    }
+    
+    HashNode<Type> * temp = new HashNode<Type>(value);
+    long index = findPosition(temp);
+    
+    if(internal[index] == nullptr)
+    {
+        internal[index] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(temp , index);
+        if(updatedPosition != -1)
+        {
+            internal[updatedPosition] = temp;
+        }
+    }
 }
 
 template <class Type>
@@ -108,8 +160,22 @@ long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 }
 
 template <class Type>
-long Hashtable<Type> :: handleCollision(HashNode<Type> *, long index)
+long Hashtable<Type> :: handleCollision(long currentPosition)
 {
+    long shift = 17;
+    
+    for(long position = currentPosition + shift; posistion != currentPosition; position += shift)
+    {
+        if(position >= capacity)
+        {
+            position = position % capacity;
+        }
+        
+        if(internalStorage[position] == nullptr)
+        {
+            return position;
+        }
+    }
     return -1;
 }
 
